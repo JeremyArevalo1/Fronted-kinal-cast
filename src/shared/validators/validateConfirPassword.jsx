@@ -1,4 +1,4 @@
-export const validateConfirmPassword = (pass, confPass) => {
+export const validateConfirPassword = (pass, confPass) => {
     return pass === confPass
 }
 
