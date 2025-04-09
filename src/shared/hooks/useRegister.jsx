@@ -21,9 +21,9 @@ export const useRegister = () => {
             return toast.error(response.error?.response?.data || 'Ocurrio un error al registrar, intenta de nuevo')
         }
 
-        const { usersDetails } = response.data
+        const { userDetails } = response.data
 
-        localStorage.setItem('user', JSON.stringify(usersDetails));
+        localStorage.setItem('user', JSON.stringify(userDetails));
 
         toast.success('Usuario registrado correctamente');
 
