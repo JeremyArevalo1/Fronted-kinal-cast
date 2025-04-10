@@ -25,7 +25,7 @@ export const ChannelCard = ({
             <ChannelAvatar url={avatarUrl}/>
             <span className="channels-card-title">{title}</span>
             <span className="channels-card-title">{username} </span>
-            <span className="channels-card-title" style={{color: isOnline} ? 'green' : 'red'}>
+            <span className="channels-card-title" style={{ color: isOnline ? 'green' : 'red' }}>
                 {isOnline ? 'Online' : 'Offline'}
             </span>
         </div>

@@ -10,7 +10,7 @@ export const Channels = ({channels}) => {
     }
 
     return(
-        <div className="channels-constainer">
+        <div className="channels-container">
             {channels.map((c) => (
                 <ChannelCard
                     key={c.id}
