@@ -34,7 +34,7 @@ export const Navbar = () => {
     }
 
     const handlerNavigateToSeetingPage = () => {
-        navigate('/setting')
+        navigate('/settings')
     }
 
     const handlerNavigateToChannelsPage = () => {

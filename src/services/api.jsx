@@ -53,6 +53,39 @@ export const getChannels = async () => {
     }
 }
 
+export const getChannelsSettings = async () => {
+    try {
+        return await apiClient.get('/settings/channel')
+    } catch (e) {
+        return {
+            error: true,
+            e
+        }
+    }
+}
+
+export const changePassword = async (data) => {
+    try {
+        return await apiClient.patch('/settings/password', data)
+    } catch (e) {
+        return {
+            error: true,
+            e
+        }
+    }
+}
+
+export const updateChannelSettings = async (data) =>{
+    try {
+        return await apiClient.put('/settings/channel', data)
+    } catch (e) {
+        return {
+            error: true,
+            e
+        }
+    }
+}
+
 export const getFollowedChannels = async () => {
     try {
         return await apiClient.get('/channels/followed')
