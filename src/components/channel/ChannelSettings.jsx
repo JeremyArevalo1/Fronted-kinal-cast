@@ -10,7 +10,6 @@ import {
     validateTitleMessage
 } from '../../shared/validators';
 import { Input } from "../Input";
-import { Setting } from "../settings/Settings";
 
 const inputs = [
     {
@@ -119,8 +118,8 @@ export const ChannelSettings = ({ settings, saveSettings}) => {
         !formState.description.isValid
     
     return (
-        <form className="">
-            {inputs.map((input) => {
+        <form className="settings-form">
+            {inputs.map((input) => (
                 <Input
                     key={input.field}
                     field={input.field}
@@ -133,7 +132,7 @@ export const ChannelSettings = ({ settings, saveSettings}) => {
                     type={input.type}
                     textArea={input.textArea}
                 />
-            })}
+            ))}
             <button onClick={handleFormSubmit} disabled={isSubmitButtonDisable}>
                 Update
             </button>
