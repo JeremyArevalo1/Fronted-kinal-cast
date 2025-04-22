@@ -14,7 +14,7 @@ export const Setting = () => {
     return(
         <div className="settings-container">
             <span>Settings</span>
-            <ChannelSettings settings={ channelSettings } saveSetting={saveSettings}/>
+            <ChannelSettings settings={ channelSettings } saveSettings={saveSettings}/>
             <PasswordSettings />
             <StreamKey streamKey={channelSettings.streamKey}/>
         </div>

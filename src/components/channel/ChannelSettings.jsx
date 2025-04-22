@@ -64,7 +64,7 @@ export const ChannelSettings = ({ settings, saveSettings}) => {
     })
 
     const handleInputValueChange = (value, field) => {
-        setFormState((prevState) = ({
+        setFormState((prevState) => ({
             ...prevState,
             [field]: {
                 ...prevState[field],
